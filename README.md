@@ -15,7 +15,7 @@ To run this project, you'll need:
 - Python 3.7+
 - A Spotify Developer account
 - A Ticketmaster Developer account
-- Flask and other dependencies listed in `requirements.txt`
+- Flask and other dependencies
 
 ## Getting Started
 
