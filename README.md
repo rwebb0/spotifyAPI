@@ -40,7 +40,6 @@ Create a .env File
 Create a file named .env in the root directory and add the following lines:
 
 ```bash
-Copy code
 CLIENT_ID=your_spotify_client_id
 CLIENT_SECRET=your_spotify_client_secret
 REDIRECT_URI=http://127.0.0.1:5000/callback
@@ -56,8 +55,8 @@ Spotify API Credentials:
 
 Ticketmaster API Key:
 
-Go to the Ticketmaster Developer Portal.
-Sign up or log in and create an application to get your API Key.
+- Go to the Ticketmaster Developer Portal.
+- Sign up or log in and create an application to get your API Key.
 
 ### 4. Run the Application
 Start the Flask application by running:
