@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Events for {{ artist_name }}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color:white">Live Events for {{ artist_name }} in the UK</h1>
+        <div class="list-group">
+            {% if events %}
+                {% for event in events %}
+                    <a href="{{ event.url }}" class="list-group-item list-group-item-action" target="_blank">
+                        <h5>{{ event.name }}</h5>
+                        <p>Date: {{ event.date }}</p>
+                        <p>Venue: {{ event.venue }}</p>
+                    </a>
+                {% endfor %}
+            {% else %}
+                <p class="text-center">No events found for {{ artist_name }} in the UK.</p>
+            {% endif %}
+        </div>
+        <div class="text-center mt-4">
+            <a href="http://127.0.0.1:5000/" class="btn btn-secondary">Back to Artists</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Top Artists</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-5" style="color:white">Choose a Time Range to View Top Artists</h1>
+        <div class="text-center">
+            <a href="/top_artists/short_term" class="btn btn-primary m-2">This Week</a>
+            <a href="/top_artists/medium_term" class="btn btn-primary m-2">This Month</a>
+            <a href="/top_artists/long_term" class="btn btn-primary m-2">All Time</a>
+        </div>
+    </div>
+</body>
+</html>
